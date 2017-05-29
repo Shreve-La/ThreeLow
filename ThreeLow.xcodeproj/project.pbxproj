@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EDEED8EC1EDCB20E007B6B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8EB1EDCB20E007B6B77 /* main.m */; };
+		EDEED8F41EDCB251007B6B77 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8F31EDCB251007B6B77 /* Dice.m */; };
+		EDEED8F71EDCB7CE007B6B77 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8F61EDCB7CE007B6B77 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		EDEED8E81EDCB20E007B6B77 /* ThreeLow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThreeLow; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEED8EB1EDCB20E007B6B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDEED8F21EDCB251007B6B77 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		EDEED8F31EDCB251007B6B77 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		EDEED8F51EDCB7CE007B6B77 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		EDEED8F61EDCB7CE007B6B77 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				EDEED8EB1EDCB20E007B6B77 /* main.m */,
+				EDEED8F51EDCB7CE007B6B77 /* InputHandler.h */,
+				EDEED8F61EDCB7CE007B6B77 /* InputHandler.m */,
+				EDEED8F21EDCB251007B6B77 /* Dice.h */,
+				EDEED8F31EDCB251007B6B77 /* Dice.m */,
 			);
 			path = ThreeLow;
 			sourceTree = "<group>";
@@ -120,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEED8F41EDCB251007B6B77 /* Dice.m in Sources */,
 				EDEED8EC1EDCB20E007B6B77 /* main.m in Sources */,
+				EDEED8F71EDCB7CE007B6B77 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
