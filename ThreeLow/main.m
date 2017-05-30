@@ -9,27 +9,35 @@
 #import <Foundation/Foundation.h>
 #import "Dice.h"
 #import "InputHandler.h"
+#import "RollDice.h"
+#import "GameController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BOOL gameOn = YES;
+
+        GameController *gameController = [[GameController alloc] init];
         InputHandler *inputHandler = [[InputHandler alloc] init];
-        
         
         while (gameOn){
         NSLog(@"Let's Play Threelow. Type 'roll' to start. \n What would you like to do?");
         NSString* inputStr = [inputHandler getInput];
         if ([inputStr isEqualToString:@"roll"]){gameOn = YES;}
+            Dice *d1 = [[Dice alloc] init];
+            Dice *d2 = [[Dice alloc] init];
+            Dice *d3 = [[Dice alloc] init];
+            Dice *d4 = [[Dice alloc] init];
+            Dice *d5 = [[Dice alloc] init];
+            Dice *d6 = [[Dice alloc] init];
+            
+            gameController.roll = @[d1, d2,d3,d4,d5,d6];
+                
         
-        Dice *die1 = [[Dice alloc] init];
-        Dice *die2 = [[Dice alloc] init];
-        Dice *die3 = [[Dice alloc] init];
-        Dice *die4 = [[Dice alloc] init];
-        Dice *die5 = [[Dice alloc] init];
-        Dice *die6 = [[Dice alloc] init];
-        
-        NSLog(@"%d, %d, %d, %d, %d, %d", die1.value, die2.value, die3.value, die4.value, die5.value, die6.value);
+            NSLog(@"You rolled: die 1: %d, die 2: %d, die 3: %d, die 4: %d, die 5 %d, die 6: %d  \n", d1.value, d2.value, d3.value, d4.value, d5.value, d6.value);
+            NSLog(@"Which die would you like to keep?");
             inputStr = [inputHandler getInput];
+            int index = [inputStr intValue]-1;
+            [gameController holdDie:index];
     
     
     
@@ -44,3 +52,4 @@ int main(int argc, const char * argv[]) {
 
     
 }
+

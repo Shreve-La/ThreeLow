@@ -15,6 +15,7 @@
     self = [super init];
     if (self) {
         _value = arc4random_uniform(6)+1;
+        _isHeld = NO;
     }
     return self;
 }

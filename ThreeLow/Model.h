@@ -1,5 +1,5 @@
 //
-//  Dice.h
+//  Model.h
 //  ThreeLow
 //
 //  Created by swcl on 2017-05-29.
@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dice : NSObject
+@interface Model : NSObject
 
-@property (assign) int value;
-@property (assign) BOOL isHeld;
+@property (nonatomic, strong) NSMutableArray *rolls;
 
 @end

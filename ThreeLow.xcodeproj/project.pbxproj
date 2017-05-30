@@ -10,6 +10,9 @@
 		EDEED8EC1EDCB20E007B6B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8EB1EDCB20E007B6B77 /* main.m */; };
 		EDEED8F41EDCB251007B6B77 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8F31EDCB251007B6B77 /* Dice.m */; };
 		EDEED8F71EDCB7CE007B6B77 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8F61EDCB7CE007B6B77 /* InputHandler.m */; };
+		EDEED8FA1EDCC988007B6B77 /* RollDice.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8F91EDCC988007B6B77 /* RollDice.m */; };
+		EDEED8FD1EDCE2DE007B6B77 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8FC1EDCE2DE007B6B77 /* Model.m */; };
+		EDEED9001EDCE5B0007B6B77 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEED8FF1EDCE5B0007B6B77 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		EDEED8F31EDCB251007B6B77 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		EDEED8F51EDCB7CE007B6B77 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		EDEED8F61EDCB7CE007B6B77 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		EDEED8F81EDCC988007B6B77 /* RollDice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollDice.h; sourceTree = "<group>"; };
+		EDEED8F91EDCC988007B6B77 /* RollDice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollDice.m; sourceTree = "<group>"; };
+		EDEED8FB1EDCE2DE007B6B77 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		EDEED8FC1EDCE2DE007B6B77 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		EDEED8FE1EDCE5B0007B6B77 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		EDEED8FF1EDCE5B0007B6B77 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +73,12 @@
 			isa = PBXGroup;
 			children = (
 				EDEED8EB1EDCB20E007B6B77 /* main.m */,
+				EDEED8FE1EDCE5B0007B6B77 /* GameController.h */,
+				EDEED8FF1EDCE5B0007B6B77 /* GameController.m */,
+				EDEED8F81EDCC988007B6B77 /* RollDice.h */,
+				EDEED8F91EDCC988007B6B77 /* RollDice.m */,
+				EDEED8FB1EDCE2DE007B6B77 /* Model.h */,
+				EDEED8FC1EDCE2DE007B6B77 /* Model.m */,
 				EDEED8F51EDCB7CE007B6B77 /* InputHandler.h */,
 				EDEED8F61EDCB7CE007B6B77 /* InputHandler.m */,
 				EDEED8F21EDCB251007B6B77 /* Dice.h */,
@@ -133,6 +148,9 @@
 				EDEED8F41EDCB251007B6B77 /* Dice.m in Sources */,
 				EDEED8EC1EDCB20E007B6B77 /* main.m in Sources */,
 				EDEED8F71EDCB7CE007B6B77 /* InputHandler.m in Sources */,
+				EDEED9001EDCE5B0007B6B77 /* GameController.m in Sources */,
+				EDEED8FA1EDCC988007B6B77 /* RollDice.m in Sources */,
+				EDEED8FD1EDCE2DE007B6B77 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
