@@ -7,18 +7,21 @@
 //
 
 #import "Dice.h"
+#import "GameController.h"
 
 @implementation Dice
 
-- (instancetype)init
+- (instancetype)init;
 {
     self = [super init];
     if (self) {
-        _value = arc4random_uniform(6)+1;
+        _diceValue = arc4random_uniform(6)+1;
         _isHeld = NO;
+        NSLog(@"%ld", _diceValue);
     }
     return self;
 }
+
 
 
 @end

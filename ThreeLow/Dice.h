@@ -10,7 +10,11 @@
 
 @interface Dice : NSObject
 
-@property (assign) int value;
+@property (assign) NSUInteger diceValue;
 @property (assign) BOOL isHeld;
+@property (strong, nonatomic) NSString *diceRep;
+
+
 
 @end
+
