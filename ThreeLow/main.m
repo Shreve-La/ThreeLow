@@ -14,13 +14,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        BOOL gameOn = YES;
+        BOOL gameOn = NO;
 
         GameController *gameController = [[GameController alloc] init];
         InputHandler *inputHandler = [[InputHandler alloc] init];
-        
+        NSLog(@"Let's Play Threelow. Type 'roll' to start");
+        NSString* inputStr = [inputHandler getInput];
+        if ([inputStr isEqualToString:@"roll"]){gameOn = YES;}
+              
         while (gameOn){
-        NSLog(@"Let's Play Threelow. Type 'roll' to start. \n What would you like to do?");
+        
         NSString* inputStr = [inputHandler getInput];
         if ([inputStr isEqualToString:@"roll"]){gameOn = YES;}
             Dice *d1 = [[Dice alloc] init];
@@ -38,9 +41,13 @@ int main(int argc, const char * argv[]) {
             inputStr = [inputHandler getInput];
             int index = [inputStr intValue]-1;
             [gameController holdDie:index];
+            NSLog(@"let's roll again]\n");
+            
     
-    
-    
+            for (Dice *die in gameController.roll) {
+                if (die.isHeld){ NSLog(@"[%d] ", die.value);
+                }else{ NSLog(@"%d ", die.value);}
+            }
     
     
     
